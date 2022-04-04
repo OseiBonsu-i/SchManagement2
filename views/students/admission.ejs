@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Student</title>
+    <!-- filepond stylesheet -->
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <!-- filepond js -->
+    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script defer src="/js/fileUpload.js"></script>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/adstyle.css">
+</head>
+
+<body>
+
+    <main class="parent">
+        <form class="form-inline" action="" method="post">
+            <div class="parent card card-5">
+                <h1 class="heading">STUDENT ADMISSION INFORMATION</h1>
+
+                <section class="child  card-body">
+                    <!-- <section class="child"> -->
+                    <h3 class="title mb-4">PUPIL'S PERSONAL DETAILS</h3>
+                    <div class="input-group-desc">
+                        <label for="idPrefix">Id Prefix</label>
+                        <input class="input--style-5" type="text" name="idPrefix" value="GC00" disabled required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="id">ID</label>
+                        <input class="input--style-5" type="text" name="id" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="firstname">First Name</label>
+                        <input class="input--style-5" type="text" name="firstname" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="middlename">Middle Name</label>
+                        <input class="input--style-5" type="text" name="middlename" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="lastname">Last Name</label>
+                        <input class="input--style-5" type="text" name="lastname" required>
+                    </div>
+
+                    <!-- <section class="child card-body"> -->
+                    <!-- <h3 class="title mb-4">PUPIL'S PERSONAL DETAILS</h3> -->
+                    <div class="input-group-desc">
+                        <label class="" for="gender">Gender</label>
+                        <select name="gender">
+                            <option value="" selected disabled>--Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="dateOfBirth">Date Of Birth</label>
+                        <input class="input--style-5" type="date" name="dateOfBirth" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="nationality">Nationality</label>
+                        <select class="input--style-5" name="nationality" required>
+                            <option value="Ghana" selected>Ghana</option>
+                            <option value="">China</option>
+                            <option value="">Usa</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group-desc">
+                        <label for="religion">Religion</label>
+                        <select class="input--style-5" name="religion">
+                            <option value="" selected disabled>--Select Religion--</option>
+                            <option value="Christianity">Christianity</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Traditionalist">Traditionalist</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Shinto">Shinto</option>
+                            <option value="Budhist">Budhist</option>
+                        </select>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="language">Mother Tongue</label>
+                        <select class="input--style-5" name="language" required>
+                            <option value="" selected disabled>--Select Languafe--</option>
+                            <option value="English">English</option>
+                            <option value="Twi">Twi</option>
+                            <option value="Huasa">Huasa</option>
+                            <option value="French">French</option>
+                            <option value="Fante">Fante</option>
+                            <option value="Nzema">Nzema</option>
+                            <option value="Dagati">Dagati</option>
+                            <option value="Frafra">Frafra</option>
+                            <option value="Akuapem">Akuapem</option>
+                            <option value="Sehwi">Sehwi</option>
+                            <option value="Bono">Bono</option>
+                            <option value="Ga">Ga</option>
+                            <option value="Ewe">Ewe</option>
+                            <option value="Ayibge">Ayibge</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="location">Location</label>
+                        <input class="input--style-5" type="text" name="location" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="homeTown">Home Town</label>
+                        <input class="input--style-5" type="text" name="homeTown" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="schoolAttended">School Attended</label>
+                        <input class="input--style-5" type="text" name="schoolAttended" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="classInLastSchool">Class In Last School</label>
+                        <input class="input--style-5" type="text" name="classInLastSchool" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="commentOnPerformance">Comment On Performance</label>
+                        <input class="input--style-5" type="text" name="commentOnPerformance" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="reasonForLeaving">Reason For Leaving</label>
+                        <input class="input--style-5" type="text" name="reasonForLeaving" required>
+                    </div>
+                    <div class="input-group-desc">
+                        <label for="reasonForChoosingUs">Reason For Choosing Us</label>
+                        <input class="input--style-5" type="text" name="reasonForChoosingUs" required>
+                    </div>
+
+                    <div class="input-group-desc">
+                        <label for="classAdmited">Class Admited</label>
+                        <select class="input--style-5" name="classAdmited">
+                            <option value="" selected disabled>--Select Class--</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                        <select class="input--style-5" name="classCategory">
+                            <option value="" selected disabled>--Select Category--</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group-desc">
+                        <label for="currentClass">Current Class</label>
+                        <select class="input--style-5" name="currentClass">
+                            <option value="" selected disabled>--Select Class--</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                        <select class="input--style-5" name="classCategory">
+                            <option value="" selected disabled>--Select Category--</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                    </div>
+                </section>
+                </section>
+
+                <section class="child card-body">
+
+                    <div>
+                        <h3 class="title mb-4">PARENTS/GUARDIAN INFORMATION</h3>
+                        <div class="father_details">
+                            <div class="input-group-desc">
+                                <label for="fatherName">Father's Name</label>
+                                <input class="input--style-5" type="text" name="fatherName" required>
+                            </div>
+
+                            <div class="input-group-desc">
+                                <label for="occupation">Occupation</label>
+                                <input class="input--style-5" type="text" name="occupation" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="homeAddress">Home Address</label>
+                                <input class="input--style-5" type="text" name="homeAddress" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="workAddress">Work Address</label>
+                                <input class="input--style-5" type="text" name="workAddress" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="mobileNo">Mobile Phone No.</label>
+                                <input class="input--style-5" type="tel" name="mobileNo" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="workNo.">Work Phone No.</label>
+                                <input class="input--style-5" type="tel" name="workNo" required>
+                            </div>
+
+                        </div>
+
+                        <div class="mother_details mt-5">
+                            <div class="input-group-desc">
+                                <label for="motherName">Mother's Name</label>
+                                <input class="input--style-5" type="text" name="motherName" required>
+                            </div>
+
+                            <div class="input-group-desc">
+                                <label for="occupation">Occupation</label>
+                                <input class="input--style-5" type="text" name="occupation" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="homeAddress">Home Address</label>
+                                <input class="input--style-5" type="text" name="homeAddress" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="workAddress">Work Address</label>
+                                <input class="input--style-5" type="text" name="workAddress" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="mobileNo">Mobile Phone No.</label>
+                                <input class="input--style-5" type="tel" name="mobileNo" required>
+                            </div>
+                            <div class="input-group-desc">
+                                <label for="workNo.">Work Phone No.</label>
+                                <input class="input--style-5" type="tel" name="workNo" required>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="child card-body">
+                    <div class="inner-child">
+                        <h3 class="title">STUDENT IMAGE</h3>
+                        <div class="input-group-desc">
+                            <div class="mt-3">
+                                <input class="filepond" type="file" name="studentImage" required>
+                            </div>
+                            <div>
+                                <!-- <input type="file" accept="image/*;CAPTURE=camera"> -->
+                                <!-- <button class="btn btn-dark mt-3"  type="">CAPTURE IMAGE</button> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <section class="inner-child">
+
+                        <h3 class="title mb-4">APPLICATION PERIOD</h3>
+                        <div class="input-group-desc">
+                            <label for="month">Month</label>
+                            <select class="input--style-5" name="month">
+                                <option value="" selected disabled>--Select Month--</option>
+                                <option value="January">January</option>
+                                <option value="Febuary">Febuary</option>
+                                <option value="March">March</option>
+                                <option value="">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-desc">
+                            <label for="term">Term</label>
+                            <select class="input--style-5" name="term">
+                                <option value="" selected disabled>--Select Term--</option>
+                                <option value="1st term">1st Term</option>
+                                <option value="2nd term">2nd Term</option>
+                                <option value="3rd">3rd Term</option>
+                                <option value="1st semester">1st Semester</option>
+                                <option value="2nd semester">2nd Semester</option>
+                                <option value="3rd semester">3rd Semester</option>
+                            </select>
+                        </div>
+                        <div class="input-group-desc">
+                            <label for="academic_year">Academic Year</label>
+                            <select class="input--style-5" name="academic_year">
+                                <option value="" selected disabled>--Select Academic Year--</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                            </select>
+                        </div>
+                        <div class="input-group-desc">
+                            <label for="application_date">Application Date</label>
+                            <input class="input--style-5" type="date" name="application_date" required>
+                        </div>
+                        <div class="input-group-desc">
+                            <label for="school_start_date">School Start Date</label>
+                            <input class="input--style-5" type="date" name="school_start_date" required>
+                        </div>
+                        <div class="input-group-desc">
+                            <label for="discharge_date">Discharged Date</label>
+                            <input class="input--style-5" type="date" name="discharge_date" required>
+                        </div>
+                    </section>
+                </section>
+                <div class=" ">
+                    <button class="btn btn-primary mt-3" type="submit">Save Record</button>
+                    <div>
+                    </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
